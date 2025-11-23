@@ -1,105 +1,113 @@
-/* Base Reset */
+/* Reset & Base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Color Variables */
-:root {
-  --main-color: #d35400;    /* dark orange */
-  --accent-color: #f39c12;  /* orange */
-  --text-color: #333;
-  --background-color: #fff;
-  --section-bg: #f9f9f9;
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Body */
 body {
-  font-family: var(--font-family);
-  color: var(--text-color);
-  background-color: var(--background-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f7f8fc, #eaeef5);
+  color: #333;
   line-height: 1.6;
 }
 
+/* Container Card */
+.card {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 50px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 /* Header */
-header {
-  background-color: var(--main-color);
-  color: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
+.card h1 {
+  font-size: 3rem;
+  color: #cc5200;
+  margin-bottom: 10px;
 }
 
-header h1 {
-  font-size: 2rem;
+/* Tagline */
+.tagline {
+  font-size: 1.3rem;
+  color: #777;
+  margin-bottom: 30px;
 }
 
-/* Hero Section */
-.hero {
-  background: url('your-hero-image.jpg') center center/cover no-repeat;
+/* Navigation */
+nav {
+  margin: 20px 0 40px 0;
+}
+
+nav a {
   color: white;
-  text-align: center;
-  padding: 6rem 2rem;
-}
-
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.hero a.button {
-  background-color: var(--accent-color);
-  color: white;
-  padding: 0.75rem 1.5rem;
+  background: #e65c00;
+  padding: 12px 22px;
   text-decoration: none;
-  border-radius: 5px;
+  margin: 0 10px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: 0.3s ease;
 }
 
-/* Features Section */
-.features {
-  background-color: var(--section-bg);
-  padding: 3rem 2rem;
+nav a:hover {
+  background: #cc5200;
 }
 
-.features h3 {
+/* Main Text */
+.card p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+/* Section Style (for extra sections) */
+.section {
+  text-align: left;
+  margin-top: 40px;
+}
+
+.section h2 {
+  color: #cc5200;
+  margin-bottom: 15px;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.section li {
+  margin-bottom: 10px;
+}
+
+/* Contact Info */
+.contact-info {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.contact-info p {
+  margin: 10px 0;
+}
+
+footer {
+  margin-top: 60px;
   text-align: center;
-  color: var(--main-color);
-  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
-.feature-item {
-  margin-bottom: 1.5rem;
-}
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    padding: 30px;
+  }
 
-.feature-item h4 {
-  color: var(--accent-color);
-  margin-bottom: 0.5rem;
+  nav a {
+    display: block;
+    margin: 10px auto;
+  }
 }
-
-/* Contact Form */
-.contact-form {
-  padding: 3rem 2rem;
-  background-color: var(--background-color);
-}
-
-.contact-form h3 {
-  color: var(--main-color);
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.contact-form form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding
