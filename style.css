@@ -1,3 +1,105 @@
-body { font-family: Arial, sans-serif; margin: 40px; }
-h1 { color: #1a3d7c; }
-nav a { margin-right: 10px; }
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+  --main-color: #d35400;    /* dark orange */
+  --accent-color: #f39c12;  /* orange */
+  --text-color: #333;
+  --background-color: #fff;
+  --section-bg: #f9f9f9;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: url('your-hero-image.jpg') center center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero a.button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Features Section */
+.features {
+  background-color: var(--section-bg);
+  padding: 3rem 2rem;
+}
+
+.features h3 {
+  text-align: center;
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
+.feature-item {
+  margin-bottom: 1.5rem;
+}
+
+.feature-item h4 {
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  padding: 3rem 2rem;
+  background-color: var(--background-color);
+}
+
+.contact-form h3 {
+  color: var(--main-color);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-form form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding
