@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to right, #f7f8fc, #eaeef5);
+  background: linear-gradient(to right, #f0f6fc, #eaf3fc);
   color: #333;
   line-height: 1.6;
 }
@@ -17,23 +17,29 @@ body {
   max-width: 900px;
   margin: 60px auto;
   padding: 50px;
-  background: white;
+  background: #ffffff;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-/* Header */
+/* Logo */
+.logo {
+  max-width: 140px;
+  margin-bottom: 20px;
+}
+
+/* Heading */
 .card h1 {
-  font-size: 3rem;
-  color: #cc5200;
+  font-size: 2.8rem;
+  color: #0072ce;
   margin-bottom: 10px;
 }
 
 /* Tagline */
 .tagline {
   font-size: 1.3rem;
-  color: #777;
+  color: #666;
   margin-bottom: 30px;
 }
 
@@ -44,7 +50,7 @@ nav {
 
 nav a {
   color: white;
-  background: #e65c00;
+  background: #0072ce;
   padding: 12px 22px;
   text-decoration: none;
   margin: 0 10px;
@@ -54,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #cc5200;
+  background: #005fa3;
 }
 
 /* Main Text */
@@ -64,14 +70,14 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-/* Section Style (for extra sections) */
+/* Section Style */
 .section {
   text-align: left;
   margin-top: 40px;
 }
 
 .section h2 {
-  color: #cc5200;
+  color: #0072ce;
   margin-bottom: 15px;
 }
 
@@ -93,11 +99,12 @@ nav a:hover {
   margin: 10px 0;
 }
 
+/* Footer */
 footer {
   margin-top: 60px;
   text-align: center;
   font-size: 0.9rem;
-  color: #aaa;
+  color: #999;
 }
 
 /* Responsive */
@@ -109,5 +116,9 @@ footer {
   nav a {
     display: block;
     margin: 10px auto;
+  }
+
+  .card h1 {
+    font-size: 2rem;
   }
 }
