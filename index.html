@@ -1,27 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>SafeLink LLC - IT Support & Cybersecurity</title>
+  <title>SafeNet LLC – IT Support & Cybersecurity</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="card">
-    <h1>SafeLink LLC</h1>
-    <p class="tagline">Modern IT Support & Cybersecurity for New England businesses.</p>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="logo-block">
+        <!-- If you upload your logo file, update the src below -->
+        <!-- <img src="safenet-logo.png" alt="SafeNet LLC Logo" class="logo"> -->
+        <h1>SafeNet LLC</h1>
+        <p class="tagline">Practical IT support & cybersecurity for small businesses.</p>
+      </div>
+      <a href="#contact" class="btn-primary">Request a free 15-minute consult</a>
+    </div>
+  </header>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+  <main>
+    <section id="about" class="section">
+      <h2>What SafeNet Does</h2>
+      <p>
+        SafeNet LLC provides on-demand IT support and basic cybersecurity hardening
+        for small businesses that don’t have an in-house IT team. I help you keep
+        your systems running, your data backed up, and your staff safer from common
+        threats like phishing and ransomware.
+      </p>
+    </section>
 
-    <p>
-      SafeLink LLC helps small and mid-sized businesses keep their systems running smoothly,
-      securely, and with less downtime. From help desk support to security hardening, we’ve got your back.
-    </p>
+    <section id="services" class="section section-alt">
+      <h2>Services</h2>
 
-    <footer>© 2025 SafeLink LLC. All rights reserved.</footer>
-  </div>
+      <div class="cards">
+        <div class="card">
+          <h3>Remote IT Support</h3>
+          <p>Help with slow computers, software issues, printers, email problems, and day-to-day tech headaches.</p>
+          <p class="price">From $75/hr</p>
+        </div>
+
+        <div class="card">
+          <h3>Security Hardening</h3>
+          <p>Lock down user accounts, tune Windows security, and improve protection against common attacks.</p>
+          <p class="price">From $249 per office</p>
+        </div>
+
+        <div class="card">
+          <h3>New Device Setup</h3>
+          <p>Set up new PCs or laptops, migrate files, configure backups, and get staff ready to work.</p>
+          <p class="price">$150 per device</p>
+        </div>
+
+        <div class="card">
+          <h3>Monthly Support Plans</h3>
+          <p>Ongoing remote support, maintenance, and basic security checks for a predictable monthly fee.</p>
+          <p class="price">From $79/month</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <h2>Why Work With SafeNet?</h2>
+      <ul class="bullets">
+        <li>Single point of contact – you talk directly with the person doing the work.</li>
+        <li>Clear, upfront pricing – no surprise bills or long-term contracts.</li>
+        <li>Remote-first – fast help without waiting for someone to drive over.</li>
+        <li>Focused on small businesses – no enterprise complexity or jargon.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <h2>Contact</h2>
+      <p>
+        Ready to talk, or just exploring options? Reach out and I’ll respond personally.
+      </p>
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:info@safenet-llc.com">info@safenet-llc.com</a></p>
+        <p><strong>Phone:</strong> (XXX) XXX-XXXX</p>
+        <p><strong>Location:</strong> New Hampshire (remote support available)</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> SafeNet LLC. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Set current year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
